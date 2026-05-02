@@ -145,6 +145,7 @@ async function sendVoiceResponse(msg, text) {
 // GESTION DES MESSAGES
 // ============================
 client.on('message', async (msg) => {
+    console.log(`🔔 Message reçu de ${msg.from}: ${msg.body}`);
     let text = msg.body;
     const userNumber = msg.from;
 
